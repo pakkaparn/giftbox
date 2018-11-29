@@ -1,0 +1,41 @@
+{
+    "name": "maetad/giftbox",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Maetad Sukarasud",
+            "email": "maetad91@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.11",
+        "slim/twig-view": "^2.4",
+        "twig/extensions": "^1.5",
+        "vlucas/phpdotenv": "^2.5",
+        "monolog/monolog": "^1.24",
+        "respect/validation": "^1.1",
+        "guzzlehttp/psr7": "^1.4",
+        "symfony/yaml": "^4.1",
+        "illuminate/database": "^5.7",
+        "illuminate/cache": "^5.7",
+        "illuminate/filesystem": "^5.7",
+        "illuminate/events": "^5.7",
+        "illuminate/pagination": "^5.7",
+        "kint-php/kint-twig": "^2.0",
+        "middlewares/trailing-slash": "^1.1",
+        "bnf/slim3-psr15": "^1.0",
+        "middlewares/whoops": "^1.2"
+    },
+    "require-dev": {
+        "kint-php/kint": "^3.0",
+        "phpunit/phpunit": "^7.4",
+        "zeuxisoo/slim-whoops": "^0.6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src",
+            "Bootstrap\\": "bootstrap",
+            "Test\\": "tests"
+        }
+    }
+}
