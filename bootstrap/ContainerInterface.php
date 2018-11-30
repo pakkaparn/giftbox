@@ -2,9 +2,9 @@
 
 namespace Bootstrap;
 
-use Slim\Container;
+use Closure;
 
-interface InjectionInterface
+interface ContainerInterface
 {
-    public function __invoke(Container $container);
+    public function __invoke(): Closure;
 }

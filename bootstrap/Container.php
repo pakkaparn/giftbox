@@ -15,18 +15,19 @@ class Container implements InjectionInterface
 
     public function inject()
     {
-        $name = $this->app->getContainer()->name;
+        $container = $this->app->getContainer();
+        $name = $container->name;
 
         $list = require_once __DIR__ . '/../config/container.php';
 
-        foreach (['base', $name, 'debug'] as $key) {
-            if (!isset($list[$key])) {
+        foreach (['base', $name, 'debug'] as $section) {
+            if (!isset($list[$section])) {
                 continue;
             }
 
-            foreach ($list[$key] as $class) {
+            foreach ($list[$section] as $key => $class) {
                 $class = new $class;
-                $class($this->app->getContainer());
+                $container[$key] = $class();
             }
         }
     }
