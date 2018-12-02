@@ -18,7 +18,7 @@ class Container implements InjectionInterface
         $container = $this->app->getContainer();
         $name = $container->name;
 
-        $list = require_once __DIR__ . '/../config/container.php';
+        $list = require __DIR__ . '/../config/container.php';
 
         foreach (['base', $name, 'debug'] as $section) {
             if (!isset($list[$section])) {

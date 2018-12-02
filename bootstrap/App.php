@@ -6,6 +6,8 @@ use Bnf\Slim3Psr15\CallableResolver;
 
 class App
 {
+    protected $app;
+
     public function __construct(array $_container = [])
     {
         $settings = require __DIR__ . '/../config/setting.php';
@@ -36,4 +38,8 @@ class App
         return $this->app->{$name}(...$arguments);
     }
 
+    public function getApp()
+    {
+        return $this->app;
+    }
 }
