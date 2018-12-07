@@ -13,7 +13,7 @@ class TwigView implements ContainerInterface
     public function __invoke(): Closure
     {
         return function ($container) {
-            $view = new Twig(__DIR__ . '/../Views', [
+            $view = new Twig(__DIR__ . '/../Site/Views', [
                 'cache' => __DIR__ . '/../../storage/cache/templates',
             ]);
 

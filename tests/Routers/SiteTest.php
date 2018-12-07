@@ -1,12 +1,13 @@
 <?php
 
-namespace Test;
+namespace Test\Routers;
 
 use Bootstrap\App;
 use PHPUnit\Framework\TestCase;
 use Slim\Http\Response;
+use Test\RequestMockupTrait;
 
-class RouteTest extends TestCase
+class SiteTest extends TestCase
 {
     use RequestMockupTrait;
 
