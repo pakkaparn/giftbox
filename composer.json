@@ -30,7 +30,8 @@
     "require-dev": {
         "kint-php/kint": "^3.0",
         "phpunit/phpunit": "^7.4",
-        "zeuxisoo/slim-whoops": "^0.6.5"
+        "zeuxisoo/slim-whoops": "^0.6.5",
+        "fzaninotto/faker": "^1.8"
     },
     "autoload": {
         "psr-4": {
