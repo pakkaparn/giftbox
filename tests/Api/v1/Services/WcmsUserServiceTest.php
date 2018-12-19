@@ -11,8 +11,10 @@ use PHPUnit\Framework\TestCase;
 class WcmsUserServiceTest extends TestCase
 {
     protected $faker;
+    protected $user;
     protected $username;
     protected $password;
+    protected $service;
 
     public function setUp()
     {
