@@ -26,7 +26,9 @@
         "bnf/slim3-psr15": "^1.0",
         "middlewares/whoops": "^1.2",
         "robmorgan/phinx": "^0.10.6",
-        "firebase/php-jwt": "^5.0"
+        "firebase/php-jwt": "^5.0",
+        "chadicus/slim-oauth2": "^3.1",
+        "predis/predis": "dev-master"
     },
     "require-dev": {
         "kint-php/kint": "^3.0",

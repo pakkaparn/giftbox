@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b3eef3f4edbf3339c9f88c1d5cc4a70",
+    "content-hash": "ea6701a18d70bbb978e0b417ee0708f5",
     "packages": [
         {
             "name": "bnf/slim3-psr15",
@@ -49,6 +49,64 @@
                 "slim"
             ],
             "time": "2018-01-23T18:10:13+00:00"
+        },
+        {
+            "name": "bshaffer/oauth2-server-php",
+            "version": "v1.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bshaffer/oauth2-server-php.git",
+                "reference": "5a0c8000d4763b276919e2106f54eddda6bc50fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/5a0c8000d4763b276919e2106f54eddda6bc50fa",
+                "reference": "5a0c8000d4763b276919e2106f54eddda6bc50fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "~2.8",
+                "firebase/php-jwt": "~2.2",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^4.0",
+                "predis/predis": "dev-master",
+                "thobbs/phpcassa": "dev-master"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "~2.8 is required to use DynamoDB storage",
+                "firebase/php-jwt": "~2.2 is required to use JWT features",
+                "mongodb/mongodb": "^1.1 is required to use MongoDB storage",
+                "predis/predis": "Required to use Redis storage",
+                "thobbs/phpcassa": "Required to use Cassandra storage"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "OAuth2": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent Shaffer",
+                    "email": "bshafs@gmail.com",
+                    "homepage": "http://brentertainment.com"
+                }
+            ],
+            "description": "OAuth2 Server for PHP",
+            "homepage": "http://github.com/bshaffer/oauth2-server-php",
+            "keywords": [
+                "auth",
+                "oauth",
+                "oauth2"
+            ],
+            "time": "2018-12-04T00:29:32+00:00"
         },
         {
             "name": "cakephp/cache",
@@ -340,6 +398,264 @@
                 "utility"
             ],
             "time": "2018-09-05T00:44:03+00:00"
+        },
+        {
+            "name": "chadicus/psr-middleware",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chadicus/psr-middleware.git",
+                "reference": "8a5a9b409bebba6a8feaddeea4766f7a0eca9214"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chadicus/psr-middleware/zipball/8a5a9b409bebba6a8feaddeea4766f7a0eca9214",
+                "reference": "8a5a9b409bebba6a8feaddeea4766f7a0eca9214",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "chadicus/coding-standard": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chadicus\\Psr\\Middleware\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Foundational interface for PSR-7 middleware",
+            "keywords": [
+                "middleware",
+                "psr"
+            ],
+            "time": "2016-09-29T15:29:40+00:00"
+        },
+        {
+            "name": "chadicus/slim-oauth2",
+            "version": "v3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chadicus/slim-oauth2.git",
+                "reference": "ac649e409d5cf0528deebebe50f61d806e74a540"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2/zipball/ac649e409d5cf0528deebebe50f61d806e74a540",
+                "reference": "ac649e409d5cf0528deebebe50f61d806e74a540",
+                "shasum": ""
+            },
+            "require": {
+                "chadicus/slim-oauth2-http": "^3.1",
+                "chadicus/slim-oauth2-middleware": "^3.1",
+                "chadicus/slim-oauth2-routes": "^3.1"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth2 routes, middleware and utilities for use within a Slim Framework API",
+            "keywords": [
+                "api",
+                "http",
+                "middleware",
+                "oauth2",
+                "psr7",
+                "routes",
+                "slim"
+            ],
+            "time": "2017-01-03T13:50:21+00:00"
+        },
+        {
+            "name": "chadicus/slim-oauth2-http",
+            "version": "v3.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chadicus/slim-oauth2-http.git",
+                "reference": "4c2bb3af076f2ac7b74f914dcaf446fa1025b97a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-http/zipball/4c2bb3af076f2ac7b74f914dcaf446fa1025b97a",
+                "reference": "4c2bb3af076f2ac7b74f914dcaf446fa1025b97a",
+                "shasum": ""
+            },
+            "require": {
+                "bshaffer/oauth2-server-php": "^1.8",
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-diactoros": ">=1.3.2"
+            },
+            "require-dev": {
+                "chadicus/coding-standard": "^1.3",
+                "php-coveralls/php-coveralls": "^1.0",
+                "phpunit/phpunit": "^5.7"
+            },
+            "suggest": {
+                "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests.",
+                "chadicus/slim-oauth2-routes": "Offers standard OAuth2 routes for slim applications"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chadicus\\Slim\\OAuth2\\Http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bridge components for PSR-7 and bshaffer's OAuth2 Server http messages.",
+            "keywords": [
+                "Bridge",
+                "http",
+                "message",
+                "oauth2",
+                "psr7",
+                "request",
+                "response",
+                "slim"
+            ],
+            "time": "2018-08-29T23:39:47+00:00"
+        },
+        {
+            "name": "chadicus/slim-oauth2-middleware",
+            "version": "v3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chadicus/slim-oauth2-middleware.git",
+                "reference": "b30f61f9308efef17bab5266db4636e0d63e8eee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-middleware/zipball/b30f61f9308efef17bab5266db4636e0d63e8eee",
+                "reference": "b30f61f9308efef17bab5266db4636e0d63e8eee",
+                "shasum": ""
+            },
+            "require": {
+                "bshaffer/oauth2-server-php": "^1.9",
+                "chadicus/psr-middleware": "^1.0",
+                "chadicus/slim-oauth2-http": "^3.1",
+                "container-interop/container-interop": "^1.1",
+                "php": "^5.6 || ^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "chadicus/coding-standard": "^1.3",
+                "php-coveralls/php-coveralls": "^1.0",
+                "php-di/php-di": "^5.4",
+                "phpunit/phpunit": "^5.7",
+                "zendframework/zend-diactoros": ">=1.3.2"
+            },
+            "suggest": {
+                "chadicus/slim-oauth2-routes": "Offers standard OAuth2 routes for slim applications"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chadicus\\Slim\\OAuth2\\Middleware\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth2 middleware for use within a Slim Framework API",
+            "keywords": [
+                "middleware",
+                "oauth2",
+                "slim"
+            ],
+            "time": "2018-09-15T18:47:37+00:00"
+        },
+        {
+            "name": "chadicus/slim-oauth2-routes",
+            "version": "v3.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chadicus/slim-oauth2-routes.git",
+                "reference": "d69d4e32102651de044860b38e686c9759150d7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chadicus/slim-oauth2-routes/zipball/d69d4e32102651de044860b38e686c9759150d7f",
+                "reference": "d69d4e32102651de044860b38e686c9759150d7f",
+                "shasum": ""
+            },
+            "require": {
+                "bshaffer/oauth2-server-php": "^1.9",
+                "chadicus/slim-oauth2-http": "^3.1",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "chadicus/coding-standard": "^1.3",
+                "php-coveralls/php-coveralls": "^1.0",
+                "phpunit/phpunit": "^5.7",
+                "slim/php-view": "^2.0.5",
+                "zendframework/zend-diactoros": ">=1.3.2"
+            },
+            "suggest": {
+                "chadicus/slim-oauth2-middleware": "Adds OAuth2 middleware for API requests.",
+                "slim/php-view": "Simple template rendering"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chadicus\\Slim\\OAuth2\\Routes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth2 routes for use within a Slim Framework API",
+            "keywords": [
+                "oauth2",
+                "routing",
+                "slim"
+            ],
+            "time": "2018-01-08T19:54:14+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -1502,6 +1818,61 @@
                 "dependency injection"
             ],
             "time": "2018-01-21T07:42:36+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "d72f0678bade78af953605622760fe262d82eb58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/d72f0678bade78af953605622760fe262d82eb58",
+                "reference": "d72f0678bade78af953605622760fe262d82eb58",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2017-07-12T14:44:10+00:00"
         },
         {
             "name": "psr/container",
@@ -2829,6 +3200,72 @@
                 "environment"
             ],
             "time": "2018-07-29T20:33:41+00:00"
+        },
+        {
+            "name": "zendframework/zend-diactoros",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-diactoros.git",
+                "reference": "a22d63fccbf1236903c2dbcd5f927f952667d749"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/a22d63fccbf1236903c2dbcd5f927f952667d749",
+                "reference": "a22d63fccbf1236903c2dbcd5f927f952667d749",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "http-interop/http-factory-tests": "^0.5.0",
+                "php-http/psr7-integration-tests": "dev-master",
+                "phpunit/phpunit": "^7.0.2",
+                "zendframework/zend-coding-standard": "~1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev",
+                    "dev-develop": "2.1.x-dev",
+                    "dev-release-1.8": "1.8.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php"
+                ],
+                "psr-4": {
+                    "Zend\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PSR HTTP Message implementations",
+            "keywords": [
+                "http",
+                "psr",
+                "psr-7"
+            ],
+            "time": "2018-12-03T16:20:17+00:00"
         }
     ],
     "packages-dev": [
@@ -4347,7 +4784,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "predis/predis": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

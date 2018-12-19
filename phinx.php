@@ -26,7 +26,7 @@ return [
         ],
         'test' => [
             'adapter' => 'sqlite',
-            'name' => './tests/db',
+            'memory' => true,
             'charset' => getenv('DB_CHARSET'),
             'collation' => getenv('DB_COLLATION'),
             'table_prefix' => getenv('DB_PREFIX'),
